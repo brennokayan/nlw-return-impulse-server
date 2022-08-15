@@ -12,6 +12,6 @@ app.use(routes);
 
 
 
-app.listen(port, () => {
-    console.log('http://localhost:' + port);
+app.listen(process.env.PORT || port, () => {
+    console.log("HTTP server is running");
 });
